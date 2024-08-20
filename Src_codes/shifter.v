@@ -1,7 +1,8 @@
 module shifter (In,Out);
 
-input [31:0] In;
-output [31:0] Out;
+parameter WIDTH = 32;
+input [WIDTH-1:0] In;
+output [WIDTH-1:0] Out;
 
 assign Out = In<<2;
 
