@@ -176,9 +176,9 @@ shifter #(.WIDTH_IN(32), .WIDTH_OUT(32)) sh2 (
 
 // AND gate for branch condition (Zero flag AND Branch control signal)
 and a1 (
-    .Y(PCSrc),     // Branch decision output
-    .A(Zero),      // Zero flag from ALU
-    .B(Branch)     // Branch control signal from control unit
+    PCSrc,     // Branch decision output
+    Zero,      // Zero flag from ALU
+    Branch     // Branch control signal from control unit
 );
 
 endmodule
