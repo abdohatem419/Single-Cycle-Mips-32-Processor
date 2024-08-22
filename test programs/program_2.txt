@@ -1,0 +1,11 @@
+# MIPS Assembly        Binary (Hex)
+00000000: 20080005    # addi $8, $0, 5     // Add immediate: $8 = 5
+00000004: 20090003    # addi $9, $0, 3     // Add immediate: $9 = 3
+00000008: 11090002    # beq  $8, $9, label // Branch if $8 == $9 (will not branch)
+0000000C: 200A0001    # addi $10, $0, 1    // Add immediate: $10 = 1
+00000010: 08000009    # j    0x9           // Jump to address 0x9 (skips next addi)
+00000014: 200A0002    # addi $10, $0, 2    // Add immediate: $10 = 2 (skipped)
+00000018: 00000000    # nop                // No operation (skipped)
+0000001C: 200B0005    # addi $11, $0, 5    // Add immediate: $11 = 5 (skipped)
+00000020: 150B0002    # bne  $8, $11, label // Branch if $8 != $11 (skipped)
+00000024: 200C0001    # addi $12, $0, 1    // Add immediate: $12 = 1 

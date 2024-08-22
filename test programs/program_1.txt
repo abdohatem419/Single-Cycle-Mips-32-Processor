@@ -1,0 +1,11 @@
+# MIPS Assembly        Binary (Hex)
+00000000: 8C100000    # lw   $16, 0($0)    // Load word from address 0 into $16
+00000004: 8C110004    # lw   $17, 4($0)    // Load word from address 4 into $17
+00000008: 02118820    # add  $17, $16, $17 // Add $16 and $17, store in $17
+0000000C: 8C120008    # lw   $18, 8($0)    // Load word from address 8 into $18
+00000010: 02119022    # sub  $18, $16, $17 // Subtract $17 from $16, store in $18
+00000014: 02328824    # and  $17, $17, $18 // Bitwise AND $17 and $18, store in $17
+00000018: 02328825    # or   $17, $17, $18 // Bitwise OR $17 and $18, store in $17
+0000001C: 0231882A    # slt  $17, $17, $18 // Set $17 to 1 if $17 < $18, else set to 0
+00000020: AC12000C    # sw   $18, 12($0)   // Store $18 at address 12
+00000024: 00000000    # nop                // No operation
